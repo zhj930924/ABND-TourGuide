@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,69 +8,68 @@
     tools:context="com.example.android.exploreshanghai.MainActivity">
 
     <ImageView
-        android:layout_width="407dp"
-        android:layout_height="609dp"
-        android:background="@android:color/background_material_light"
-        android:scaleType="centerCrop"
-        android:src="@drawable/skyline1"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="72dp"/>
-
-    <LinearLayout
-        android:id="@+id/main_button_container"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background=""
-        android:orientation="vertical"
-        android:weightSum="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599">
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_main"/>
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/heading_shanghai"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/main_button_container"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:maxLines="1"
-            android:text="@string/shanghai"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="45sp"/>
+            android:orientation="vertical"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6">
 
+            <TextView
+                android:id="@+id/heading_shanghai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/shanghai"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="45sp"/>
 
-        <TextView
-            android:id="@+id/heading_shanghai_ch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="48dp"
-            android:gravity="center"
-            android:maxLines="1"
-            android:text="@string/shanghai_ch"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="34sp"/>
+            <TextView
+                android:id="@+id/heading_shanghai_ch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/shanghai_chinese"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="34sp"/>
 
-        <TextView
-            android:id="@+id/heading_find_attractions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:text="@string/find_attractions"/>
+            <TextView
+                android:id="@+id/heading_find_attractions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/find_attractions"/>
 
-        <Button
-            android:id="@+id/button_explore"
-            style="@style/button_text"
-            android:layout_marginBottom="12dp"
-            android:text="@string/explore"/>
+            <Button
+                android:id="@+id/button_explore"
+                style="@style/button_text"
+                android:layout_marginBottom="12dp"
+                android:text="@string/explore"/>
 
-        <Button
-            android:id="@+id/button_favorite"
-            style="@style/button_text"
-            android:text="@string/favorite"/>
+            <Button
+                android:id="@+id/button_favorite"
+                style="@style/button_text"
+                android:text="@string/favorite"/>
 
-    </LinearLayout>
+        </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>
