@@ -8,6 +8,6 @@ public class ZooActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bund);
+        setContentView(R.layout.detail_container);
     }
 }

@@ -45,25 +45,25 @@ public class ExploreActivity extends AppCompatActivity {
 
     private void initializeAttractions() {
         mAttractions = new ArrayList<>();
-        mAttractions.add(new Attraction(getString(R.string.bund_name), R.drawable.bund));
-        mAttractions.add(new Attraction(getString(R.string.museum_name), R.drawable.museum));
-        mAttractions.add(new Attraction(getString(R.string.zoo_name), R.drawable.zoo));
-        mAttractions.add(new Attraction(getString(R.string.yu_garden_name), R.drawable.yu_garden));
-        mAttractions.add(new Attraction(getString(R.string.train_name), R.drawable.train));
+        mAttractions.add(new Attraction(getString(R.string.bund_title), R.drawable.bund));
+        mAttractions.add(new Attraction(getString(R.string.museum_title), R.drawable.museum));
+        mAttractions.add(new Attraction(getString(R.string.zoo_title), R.drawable.zoo));
+        mAttractions.add(new Attraction(getString(R.string.yu_garden_title), R.drawable.yu_garden));
+        mAttractions.add(new Attraction(getString(R.string.train_title), R.drawable.train));
     }
 
     // I know this is nasty but I don't know how to use CardView with ListView
     private void goToAttraction(String attractionName) {
         Intent attractionIntent = new Intent(ExploreActivity.this, ExploreActivity.class);
-        if (attractionName == getString(R.string.bund_name)) {
+        if (attractionName == getString(R.string.bund_title)) {
             attractionIntent = new Intent(ExploreActivity.this, BundActivity.class);
-        } else if (attractionName == getString(R.string.museum_name)) {
+        } else if (attractionName == getString(R.string.museum_title)) {
             attractionIntent = new Intent(ExploreActivity.this, MuseumActivity.class);
-        } else if (attractionName == getString(R.string.zoo_name)) {
+        } else if (attractionName == getString(R.string.zoo_title)) {
             attractionIntent = new Intent(ExploreActivity.this, ZooActivity.class);
-        } else if (attractionName == getString(R.string.yu_garden_name)) {
+        } else if (attractionName == getString(R.string.yu_garden_title)) {
             attractionIntent = new Intent(ExploreActivity.this, YuGardenActivity.class);
-        } else if (attractionName == getString(R.string.train_name)) {
+        } else if (attractionName == getString(R.string.train_title)) {
             attractionIntent = new Intent(ExploreActivity.this, TrainActivity.class);
         }
         startActivity(attractionIntent);

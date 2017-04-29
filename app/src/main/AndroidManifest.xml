@@ -41,7 +41,7 @@
         </activity>
         <activity
             android:name=".BundActivity"
-            android:label="@string/bund_name"
+            android:label="@string/bund_title"
             android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
 
@@ -52,7 +52,7 @@
         </activity>
         <activity
             android:name=".MuseumActivity"
-            android:label="@string/museum_name"
+            android:label="@string/museum_title"
             android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
 
@@ -63,7 +63,7 @@
         </activity>
         <activity
             android:name=".ZooActivity"
-            android:label="@string/zoo_name"
+            android:label="@string/zoo_title"
             android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
 
@@ -74,7 +74,7 @@
         </activity>
         <activity
             android:name=".YuGardenActivity"
-            android:label="@string/yu_garden_name"
+            android:label="@string/yu_garden_title"
             android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
 
@@ -85,7 +85,7 @@
         </activity>
         <activity
             android:name=".TrainActivity"
-            android:label="@string/train_name"
+            android:label="@string/train_title"
             android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
 

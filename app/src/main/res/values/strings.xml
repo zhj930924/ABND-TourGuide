@@ -6,78 +6,85 @@
     <string name="explore">Explore</string>
     <string name="favorite">Favorite</string>
     <string name="description">Description:</string>
-    <string name="length">Recommended length of visit:</string>
-    <string name="fee">Fee:</string>
+    <string name="review">REVIEW</string>
+    <string name="info">INFO</string>
+    <string name="home">Home</string>
 
     <!-- String for Attractions -->
     <!-- The Bund -->
-    <string name="bund_name">The Bund</string>
-    <string name="bund_intro"># Historic Walking Area</string>
+    <string name="bund_title">The Bund</string>
+    <string name="bund_subtitle"># Historic Walking Area</string>
     <string name="bund_review">A must-do. I’ve been to Shanghai many times and never saw it and
         it made me have a new perspective on the city. I saw during the day, but assume night
-        time would have a whole different feel. Enjoy!
-        —- FrankieLankie</string>
-    <string name="bund_address">Zhongshan East 1st Rd, WaiTan, Shanghai, China</string>
+        time would have a whole different feel. Enjoy!</string>
+    <string name="bund_reviewer">—-  FrankieLankie</string>
+    <string name="bund_address">Zhongshan East 1st Rd, WaiTan, \nShanghai, China</string>
     <string name="bund_description">This is a designated section of Shanghai’s port along the
         Huang Pu River lined with beautiful neo-classical buildings and a waterfront promenade
         that is packed with tourists, locals and street sellers.</string>
-    <string name="bund_length">2–3 hours</string>
-    <string name="bund_fee">No</string>
+    <string name="bund_length">Recommended length of visit: 2–3 hours</string>
+    <string name="bund_fee">Fee: No</string>
 
 
     <!-- Shanghai Museum -->
-    <string name="museum_name">Shanghai Museum</string>
+    <string name="museum_title">Shanghai Museum</string>
+    <string name="museum_subtitle"># Specialty Museum</string>
     <string name="museum_review">If you visit this museum, you get a comprehensive picture of the
         traditional Chinese art. Several art branches are presented (paintings, calligraphy, etc.).
         So if you are interested at least a little by the local culture and are, you definitely
-        must not skip this. And the entry is free. :-)
-        —-  mittomen</string>
+        must not skip this. And the entry is free. :-)</string>
+    <string name="museum_reviewer">—-  mittomen</string>
     <string
-        name="museum_address">201 Renmin Ave, RenMin GuangChang, Huangpu Qu, China, 200000</string>
+        name="museum_address">201 Renmin Ave, RenMin GuangChang, \nHuangpu Qu, China, 200000</string>
     <string name="museum_description">This elegant museum, opened in 1996, features eleven 
 	state-of-the-art galleries housing China’s international-standard exhibits of bronzes, paintings, 
 	sculpture, ceramics, jade and Ming and Qing dynasty furniture.</string>
-    <string name="museum_length">2–3 hours</string>
-    <string name="museum_fee">No</string>
+    <string name="museum_length">Recommended length of visit: 2–3 hours</string>
+    <string name="museum_fee">Fee: No</string>
 
     <!-- Shanghai Wild Animal Park -->
-    <string name="zoo_name">Shanghai Wild Animal Park</string>
-    <string name="zoo_review">I’ve been to a free zoos in China now and this is the best in terms of animal welfare 
+    <string name="zoo_title">Shanghai Wild Animal Park</string>
+    <string name="zoo_subtitle"># Nature &amp; Wildlife Areas</string>
+    <string name="zoo_review">I’ve been to a free zoos in China now and this is the best in terms of animal welfare
 	that I witnessed. Huge area, wide spaces. There are opportunities to feed and hold animals I’m not sure how ethical 
-	that is but they seemed well looked after. 
-	—- Hodderr</string>
+	that is but they seemed well looked after.</string>
+    <string name="zoo_reviewer">—-  Hodderr</string>
     <string
-        name="zoo_address">No.178 Nanliu Main Road, Pudong New Area, Shanghai 201300, China </string>
+        name="zoo_address">No.178 Nanliu Main Road, Pudong New Area, \nShanghai 201300, China </string>
     <string name="zoo_description">Web Site: http://www.shwzoo.com/</string>
-    <string name="zoo_length">4-5 hours</string>
-    <string name="zoo_fee">Yes</string>
-
-    <!-- China Railway High-speed  -->
-    <string name="train_name">China Railway High-Speed</string>
-    <string name="train_review">Convenient way to get around the cities near Shanghai or the whole country.
-	—- HorseHorseTigerTiger</string>
-    <string name="train_address">Shanghai Hongqiao International Airport, Minhang Qu, China</string>
-    <string name="train_description">Works like a train, just faster and cleaner. It connects the Whole China. </string>
-    <string name="train_length">1 hour</string>
-    <string name="train_fee">Yes</string>
+    <string name="zoo_length">Recommended length of visit: 4–5 hours</string>
+    <string name="zoo_fee">Fee: Yes</string>
 
     <!-- Yu Garden -->
-    <string name="yu_garden_name">Yu Garden</string>
-    <string name="yu_garden_review">My wife who is an avid gardener was blow away by the size and variety within the walls. 
-	There is a 60 RMB ticket price to get it but it is well worth the price. Our visit was on a July afternoon so it was very hot 
-	and humid. Plan ahead as 4 hours is a minimum to enjoy the entire gardens and taking time to stop for pictures and read the 
-	history. There are shops within the walls selling cheap to very expensive souvenirs but the quality is much better than those 
-	at the exit. 
-	—- E1030RSfrankb</string>
-    <string name="yu_garden_address">No.218 Anren Street, Huangpu District | near Fuyou Road, Shanghai 200010, China</string>
-    <string name="yu_garden_description">A classical garden complete with period style buildings. The Garden was created by 
+    <string name="yu_garden_title">Yu Garden</string>
+    <string name="yu_garden_subtitle"># History Landmark</string>
+    <string name="yu_garden_review">My wife who is an avid gardener was blow away by the size and variety within the walls.
+	There is a 60 RMB ticket price to get it but it is well worth the price. Our visit was on a July afternoon so it was very hot
+	and humid. Plan ahead as 4 hours is a minimum to enjoy the entire gardens and taking time to stop for pictures and read the
+	history. There are shops within the walls selling cheap to very expensive souvenirs but the quality is much better than those
+	at the exit.</string>
+    <string name="yu_garden_reviewer">—-  E1030RSfrankb</string>
+    <string name="yu_garden_address">No.218 Anren Street, Huangpu District \n near Fuyou Road, Shanghai 200010, China</string>
+    <string name="yu_garden_description">A classical garden complete with period style buildings. The Garden was created by
 	Pan Yunduan a Government Officer for his family finishing in 1577. </string>
-    <string name="yu_garden_length">2–3 hours</string>
-    <string name="yu_garden_fee">Yes</string>
-    <string name="attraction_image">Attraction Photo</string>
+    <string name="yu_garden_length">Recommended length of visit: 2–3 hours</string>
+    <string name="yu_garden_fee">Fee: Yes</string>
 
+    <!-- China Railway High-speed  -->
+    <string name="train_title">China Railway High-Speed</string>
+    <string name="train_subtitle"># Mass Transportation System</string>
+    <string name="train_review">Convenient way to get around the cities near Shanghai or the whole country.
+	—- HorseHorseTigerTiger</string>
+    <string name="train_reviewer">—- HorseHorseTigerTiger</string>
+    <string
+        name="train_address">Shanghai Hongqiao International Airport, \nMinhang Qu, China</string>
+    <string name="train_description">Works like a train, just faster and cleaner. It connects the Whole China. </string>
+    <string name="train_length">Recommended length of visit: 1 hour</string>
+    <string name="train_fee">Fee: Yes</string>
+
+    <string name="attraction_image">Attraction Photo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="home">Home</string>
+    <string name="get_direction">Get Direction</string>
 
 </resources>
