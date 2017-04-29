@@ -39,9 +39,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+        <!-- Attractions -->
         <activity
-            android:name=".BundActivity"
-            android:label="@string/bund_name"
+            android:name=".AttractionActivity"
+            android:label="@string/attractions"
             android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
 
@@ -49,50 +50,61 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ExploreActivity"/>
+        </activity>
+        <activity
+            android:name=".BundActivity"
+            android:label="@string/bund_title"
+            android:parentActivityName=".AttractionActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AttractionActivity"/>
         </activity>
         <activity
             android:name=".MuseumActivity"
-            android:label="@string/museum_name"
-            android:parentActivityName=".ExploreActivity"
+            android:label="@string/museum_title"
+            android:parentActivityName=".AttractionActivity"
             tools:targetApi="jelly_bean">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ExploreActivity"/>
+                android:value=".AttractionActivity"/>
         </activity>
         <activity
             android:name=".ZooActivity"
-            android:label="@string/zoo_name"
-            android:parentActivityName=".ExploreActivity"
+            android:label="@string/zoo_title"
+            android:parentActivityName=".AttractionActivity"
             tools:targetApi="jelly_bean">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ExploreActivity"/>
+                android:value=".AttractionActivity"/>
         </activity>
         <activity
             android:name=".YuGardenActivity"
-            android:label="@string/yu_garden_name"
-            android:parentActivityName=".ExploreActivity"
+            android:label="@string/yu_garden_title"
+            android:parentActivityName=".AttractionActivity"
             tools:targetApi="jelly_bean">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ExploreActivity"/>
+                android:value=".AttractionActivity"/>
         </activity>
         <activity
             android:name=".TrainActivity"
-            android:label="@string/train_name"
-            android:parentActivityName=".ExploreActivity"
+            android:label="@string/train_title"
+            android:parentActivityName=".AttractionActivity"
             tools:targetApi="jelly_bean">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ExploreActivity"/>
+                android:value=".AttractionActivity"/>
         </activity>
     </application>
 

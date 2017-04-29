@@ -3,69 +3,52 @@ package com.example.android.exploreshanghai;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class ExploreActivity extends AppCompatActivity {
 
-    private ArrayList<Attraction> mAttractions;
+    private ArrayList<Category> mCategories;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recycler);
+        setContentView(R.layout.category_list);
 
-        // Find the RecyclerView by its ID
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.attraction_recycler_view);
+        initializeCategories();
 
-        // Improve performance since the layout size of the RecyclerView is fixed
-        recyclerView.setHasFixedSize(true);
+        // Create an {@link FavoriteAdapter}, whose data source is a list of {@link Favorite}s. The
+        // adapter knows how to create list items for each item in the list.
+        CategoryAdapter categoryAdapter = new CategoryAdapter(this, mCategories);
 
-        // use a linear layout manager
-        LinearLayoutManager mLayoutManager = new LinearLayoutManager(ExploreActivity.this);
-        recyclerView.setLayoutManager(mLayoutManager);
+        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
+        // There should be a {@link ListView} with the view ID called list
+        ListView listView = (ListView) findViewById(R.id.category_list_view);
 
-        // Create a list of attractions
-        initializeAttractions();
+        // Make the {@link ListView} use the {@link FavoriteAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Favorite} in the list.
+        listView.setAdapter(categoryAdapter);
 
-        // specify an adapter
-        AttractionAdapter attractionAdapter =
-                new AttractionAdapter(mAttractions,
-                        new AttractionAdapter.OnItemClickListener() {
-                            @Override
-                            public void onItemClick(Attraction attraction) {
-                                String attractionName = attraction.getName();
-                                goToAttraction(attractionName);
-                            }
-                        });
-        recyclerView.setAdapter(attractionAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Category category = mCategories.get(position);
+                startActivity(new Intent(ExploreActivity.this, category.getCategoryActivity()));
+            }
+        });
     }
 
-    private void initializeAttractions() {
-        mAttractions = new ArrayList<>();
-        mAttractions.add(new Attraction(getString(R.string.bund_name), R.drawable.bund));
-        mAttractions.add(new Attraction(getString(R.string.museum_name), R.drawable.museum));
-        mAttractions.add(new Attraction(getString(R.string.zoo_name), R.drawable.zoo));
-        mAttractions.add(new Attraction(getString(R.string.yu_garden_name), R.drawable.yu_garden));
-        mAttractions.add(new Attraction(getString(R.string.train_name), R.drawable.train));
-    }
-
-    // I know this is nasty but I don't know how to use CardView with ListView
-    private void goToAttraction(String attractionName) {
-        Intent attractionIntent = new Intent(ExploreActivity.this, ExploreActivity.class);
-        if (attractionName == getString(R.string.bund_name)) {
-            attractionIntent = new Intent(ExploreActivity.this, BundActivity.class);
-        } else if (attractionName == getString(R.string.museum_name)) {
-            attractionIntent = new Intent(ExploreActivity.this, MuseumActivity.class);
-        } else if (attractionName == getString(R.string.zoo_name)) {
-            attractionIntent = new Intent(ExploreActivity.this, ZooActivity.class);
-        } else if (attractionName == getString(R.string.yu_garden_name)) {
-            attractionIntent = new Intent(ExploreActivity.this, YuGardenActivity.class);
-        } else if (attractionName == getString(R.string.train_name)) {
-            attractionIntent = new Intent(ExploreActivity.this, TrainActivity.class);
-        }
-        startActivity(attractionIntent);
+    private void initializeCategories() {
+        // TODO FIX THIS WITH REAL DATA
+        mCategories = new ArrayList<>();
+        mCategories.add(new Category(getString(R.string.category_attractions), R.drawable.bund,
+                AttractionActivity.class));
+        mCategories.add(new Category(getString(R.string.category_food), R.drawable.museum,
+                AttractionActivity.class));
+        mCategories.add(new Category(getString(R.string.category_play), R.drawable.zoo,
+                AttractionActivity.class));
     }
 }
