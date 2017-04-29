@@ -59,13 +59,13 @@
                 android:text="@string/find_attractions"/>
 
             <Button
-                android:id="@+id/button_explore"
+                android:id="@+id/explore_button"
                 style="@style/button_text"
                 android:layout_marginBottom="12dp"
                 android:text="@string/explore"/>
 
             <Button
-                android:id="@+id/button_favorite"
+                android:id="@+id/favorite_button"
                 style="@style/button_text"
                 android:text="@string/favorite"/>
 

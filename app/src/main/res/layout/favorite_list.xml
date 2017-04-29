@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textSize="34sp"/>
+
+    <ListView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/favorite_list_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:background="@color/colorButtonDark"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:text="@string/home"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

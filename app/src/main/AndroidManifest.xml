@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.android.exploreshanghai">
 
     <application
@@ -16,7 +17,82 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ExploreActivity">
+        <activity
+            android:name=".ExploreActivity"
+            android:label="@string/explore"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity
+            android:name=".FavoriteActivity"
+            android:label="@string/favorite"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity
+            android:name=".BundActivity"
+            android:label="@string/bund_name"
+            android:parentActivityName=".ExploreActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExploreActivity"/>
+        </activity>
+        <activity
+            android:name=".MuseumActivity"
+            android:label="@string/museum_name"
+            android:parentActivityName=".ExploreActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExploreActivity"/>
+        </activity>
+        <activity
+            android:name=".ZooActivity"
+            android:label="@string/zoo_name"
+            android:parentActivityName=".ExploreActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExploreActivity"/>
+        </activity>
+        <activity
+            android:name=".YuGardenActivity"
+            android:label="@string/yu_garden_name"
+            android:parentActivityName=".ExploreActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExploreActivity"/>
+        </activity>
+        <activity
+            android:name=".TrainActivity"
+            android:label="@string/train_name"
+            android:parentActivityName=".ExploreActivity"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExploreActivity"/>
         </activity>
     </application>
 

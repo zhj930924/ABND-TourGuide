@@ -1,5 +1,6 @@
 package com.example.android.exploreshanghai;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,37 +11,61 @@ import java.util.ArrayList;
 public class ExploreActivity extends AppCompatActivity {
 
     private ArrayList<Attraction> mAttractions;
-    private RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.attraction_recycler);
+        setContentView(R.layout.recycler);
 
         // Find the RecyclerView by its ID
-        mRecyclerView = (RecyclerView) findViewById(R.id.attraction_recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.attraction_recycler_view);
 
         // Improve performance since the layout size of the RecyclerView is fixed
-        mRecyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(true);
 
         // use a linear layout manager
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(ExploreActivity.this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setLayoutManager(mLayoutManager);
 
         // Create a list of attractions
         initializeAttractions();
 
         // specify an adapter
-        AttractionAdapter attractionAdapter = new AttractionAdapter(mAttractions);
-        mRecyclerView.setAdapter(attractionAdapter);
+        AttractionAdapter attractionAdapter =
+                new AttractionAdapter(mAttractions,
+                        new AttractionAdapter.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(Attraction attraction) {
+                                String attractionName = attraction.getName();
+                                goToAttraction(attractionName);
+                            }
+                        });
+        recyclerView.setAdapter(attractionAdapter);
     }
 
     private void initializeAttractions() {
         mAttractions = new ArrayList<>();
         mAttractions.add(new Attraction(getString(R.string.bund_name), R.drawable.bund));
         mAttractions.add(new Attraction(getString(R.string.museum_name), R.drawable.museum));
-        mAttractions.add(new Attraction(getString(R.string.zoo_name), R.drawable.zoo_3_2));
+        mAttractions.add(new Attraction(getString(R.string.zoo_name), R.drawable.zoo));
         mAttractions.add(new Attraction(getString(R.string.yu_garden_name), R.drawable.yu_garden));
         mAttractions.add(new Attraction(getString(R.string.train_name), R.drawable.train));
+    }
+
+    // I know this is nasty but I don't know how to use CardView with ListView
+    private void goToAttraction(String attractionName) {
+        Intent attractionIntent = new Intent(ExploreActivity.this, ExploreActivity.class);
+        if (attractionName == getString(R.string.bund_name)) {
+            attractionIntent = new Intent(ExploreActivity.this, BundActivity.class);
+        } else if (attractionName == getString(R.string.museum_name)) {
+            attractionIntent = new Intent(ExploreActivity.this, MuseumActivity.class);
+        } else if (attractionName == getString(R.string.zoo_name)) {
+            attractionIntent = new Intent(ExploreActivity.this, ZooActivity.class);
+        } else if (attractionName == getString(R.string.yu_garden_name)) {
+            attractionIntent = new Intent(ExploreActivity.this, YuGardenActivity.class);
+        } else if (attractionName == getString(R.string.train_name)) {
+            attractionIntent = new Intent(ExploreActivity.this, TrainActivity.class);
+        }
+        startActivity(attractionIntent);
     }
 }

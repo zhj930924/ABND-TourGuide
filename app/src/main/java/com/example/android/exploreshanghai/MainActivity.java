@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the explore button by its id
-        Button exploreButton = (Button) findViewById(R.id.button_explore);
+        // Navigate to Explore Activity
+        Button exploreButton = (Button) findViewById(R.id.explore_button);
 
         exploreButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +26,20 @@ public class MainActivity extends AppCompatActivity {
                 Intent exploreIntent = new Intent(MainActivity.this, ExploreActivity.class);
 
                 startActivity(exploreIntent);
+            }
+        });
+
+        // Navigate to Favorite Activity
+        Button favoriteButton = (Button) findViewById(R.id.favorite_button);
+
+        favoriteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                /* Create a new intent to open {@link FavoriteActivity} */
+                Intent favoriteIntent = new Intent(MainActivity.this, FavoriteActivity.class);
+
+                startActivity(favoriteIntent);
             }
         });
     }

@@ -9,7 +9,6 @@
     <string name="length">Recommended length of visit:</string>
     <string name="fee">Fee:</string>
 
-
     <!-- String for Attractions -->
     <!-- The Bund -->
     <string name="bund_name">The Bund</string>
@@ -33,7 +32,8 @@
         So if you are interested at least a little by the local culture and are, you definitely
         must not skip this. And the entry is free. :-)
         —-  mittomen</string>
-    <string name="museum_address">201 Renmin Ave, RenMin GuangChang, Huangpu Qu, China, 200000</string>
+    <string
+        name="museum_address">201 Renmin Ave, RenMin GuangChang, Huangpu Qu, China, 200000</string>
     <string name="museum_description">This elegant museum, opened in 1996, features eleven 
 	state-of-the-art galleries housing China’s international-standard exhibits of bronzes, paintings, 
 	sculpture, ceramics, jade and Ming and Qing dynasty furniture.</string>
@@ -46,7 +46,8 @@
 	that I witnessed. Huge area, wide spaces. There are opportunities to feed and hold animals I’m not sure how ethical 
 	that is but they seemed well looked after. 
 	—- Hodderr</string>
-    <string name="zoo_address">No.178 Nanliu Main Road, Pudong New Area, Shanghai 201300, China </string>
+    <string
+        name="zoo_address">No.178 Nanliu Main Road, Pudong New Area, Shanghai 201300, China </string>
     <string name="zoo_description">Web Site: http://www.shwzoo.com/</string>
     <string name="zoo_length">4-5 hours</string>
     <string name="zoo_fee">Yes</string>
@@ -74,5 +75,9 @@
     <string name="yu_garden_length">2–3 hours</string>
     <string name="yu_garden_fee">Yes</string>
     <string name="attraction_image">Attraction Photo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
 
 </resources>
