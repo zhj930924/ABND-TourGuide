@@ -10,7 +10,7 @@
     <string name="info">INFO</string>
     <string name="home">Home</string>
 
-    <!-- Category -->
+    <!-- Restaurant -->
     <string name="category_attractions">Attractions</string>
     <string name="category_food">Food</string>
     <string name="category_play">Play</string>
@@ -93,5 +93,24 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="get_direction">Get Direction</string>
     <string name="attractions">Attractions</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="menu">Menu</string>
+
+    <!-- Restaurants -->
+    <string name="restaurant_0_name">Jia Jia Tang Bao</string>
+    <string name="restaurant_0_address">Huanghe Rd, People\'s Square Station</string>
+    <string name="restaurant_1_name">Mr &amp; Mrs Bund-Modern Eatery</string>
+    <string name="restaurant_2_name">Lost Haven</string>
+    <string name="restaurant_2_address">38 Gaoyou Rd</string>
+    <string name="hotel_0_name">JW Marriott at Tomorrow Square</string>
+    <string name="hotel_0_address">No.399 W Nanjing Rd, Huangpu Dist.</string>
+    <string name="hotel_1_address">28 Jilong Rd,\\nPilot Free Trade Zone</string>
+    <string name="hotel_1_name">Sheraton Shanghai Waigaoqiao</string>
+    <string name="hotel_2_name">Mandarin Oriental Pudong</string>
+    <string name="hotel_2_address">111 S Pudong Rd, Pudong</string>
+    <string name="hotel_3_name">Jingyue 99 Inn Jiangzhen</string>
+    <string name="hotel_3_address">No.835 Chuannanfeng Rd, Pudong New Dist</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
 
 </resources>

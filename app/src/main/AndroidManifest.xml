@@ -5,9 +5,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -29,20 +29,38 @@
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".FavoriteActivity"
-            android:label="@string/favorite"
-            android:parentActivityName=".MainActivity"
+            android:name=".AttractionActivity"
+            android:label="@string/attractions"
+            android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
-
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".ExploreActivity"/>
         </activity>
-        <!-- Attractions -->
         <activity
-            android:name=".AttractionActivity"
-            android:label="@string/attractions"
+            android:name=".RestaurantActivity"
+            android:label="@string/restaurants"
+            android:parentActivityName=".ExploreActivity"
+            tools:targetApi="jelly_bean">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExploreActivity"/>
+        </activity>
+        <activity
+            android:name=".HotelActivity"
+            android:label="@string/hotels"
+            android:parentActivityName=".ExploreActivity"
+            tools:targetApi="jelly_bean">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExploreActivity"/>
+        </activity>
+        <activity
+            android:name=".FavoriteActivity"
+            android:label="@string/favorite"
             android:parentActivityName=".ExploreActivity"
             tools:targetApi="jelly_bean">
 
@@ -51,6 +69,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ExploreActivity"/>
         </activity>
+        <!-- Attractions -->
         <activity
             android:name=".BundActivity"
             android:label="@string/bund_title"
@@ -107,5 +126,4 @@
                 android:value=".AttractionActivity"/>
         </activity>
     </application>
-
 </manifest>

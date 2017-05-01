@@ -6,4 +6,5 @@
     <color name="colorButton">#b26d7c9f</color>
     <color name="colorButtonDark">#b2093063</color>
     <color name="ColorText">#949799</color>
+    <color name="colorPrimaryTransparent">#aa6d7c9f</color>
 </resources>

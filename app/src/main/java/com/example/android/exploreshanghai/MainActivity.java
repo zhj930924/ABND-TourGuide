@@ -28,19 +28,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(exploreIntent);
             }
         });
-
-        // Navigate to Favorite Activity
-//        Button favoriteButton = (Button) findViewById(R.id.favorite_button);
-//
-//        favoriteButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                /* Create a new intent to open {@link FavoriteActivity} */
-//                Intent favoriteIntent = new Intent(MainActivity.this, FavoriteActivity.class);
-//
-//                startActivity(favoriteIntent);
-//            }
-//        });
     }
 }
